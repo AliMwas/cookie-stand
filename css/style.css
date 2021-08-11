@@ -1,0 +1,97 @@
+
+
+header{
+
+    background-color: rgb(68, 10, 10);
+    color: silver;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    
+}
+a:link, a:visited {
+    background-color: silver;
+    color: rgb(68, 10, 10);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color:rgb(95, 95, 95);
+  }
+  #first ul{
+      font-size:x-large;
+    
+    text-align: center;
+        list-style: square inside url("sqpurple.gif");
+        background-color: rgb(68, 10, 10);
+        color: silver;
+      
+
+
+
+  }
+  #second{
+
+    font-size:x-large;
+    text-align: center;
+    list-style: square inside;
+    background-color: rgb(68, 10, 10);
+    color: silver;
+
+
+  }
+  #second ul{
+    font-size:x-large;
+    text-align: center;
+    list-style: square inside;
+    background-color: rgb(68, 10, 10);
+    color: silver;
+
+  }
+
+  #third {
+    list-style: square inside;
+    font-size:x-large;
+    text-align: center;
+    list-style: square inside url("sqpurple.gif");
+    background-color: rgb(68, 10, 10);
+    color: silver;
+}
+
+
+  #third ul{
+    list-style: square inside;
+    font-size:x-large;
+    text-align: center;
+    list-style: square inside url("sqpurple.gif");
+    background-color: rgb(68, 10, 10);
+    color: silver;
+
+  }
+body{
+
+    background-color: rgb(211, 187, 156);
+}
+  img {
+    display: inline-block;
+    border: 10px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+    height: 200px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  
+  }
+  
+  table, th, td {
+    margin-left: auto;
+    margin-top: 15%;
+    margin-right: auto;
+    border: 1px solid black;
+  }
