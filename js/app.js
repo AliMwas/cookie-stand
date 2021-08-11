@@ -93,14 +93,14 @@ SalmonCookiesShop.prototype.render = function () {
         trEl.appendChild(thEl20);
         thEl20.textContent = 'total';
      
-        let newTotal =0;
+        let newTotal = 0;
         
         for(let i = 0 ; i < timeOpening.length; i++){
             let total = 0;
              
             for(let j = 0 ; j < salmonShops.length; j++){
-                total = total + salmonShops[j].cookiesPerHour[i];
-                newTotal = newTotal + salmonShops[j].cookiesPerHour[i];
+                total =  total + salmonShops[j].cookiesHour[i];
+                newTotal = newTotal + salmonShops[j].cookiesHour[i];
      
         }
          
