@@ -18,11 +18,10 @@ this.cookiesHour = [];
 salmonShops.push(this);
 }
 let shop1 = new SalmonCookiesShop ('seatlle', 23, 65,6.3)
-    let shop2 = new SalmonCookiesShop ('Tokyo', 3, 24,1.2)
-    let shop3 = new SalmonCookiesShop ('Dubai', 11, 38,3.7)
-    let shop4 = new SalmonCookiesShop ('Paris', 20, 38,2.3)
-    let shop5 = new SalmonCookiesShop ('Lima', 2, 16,4.6)
-
+let shop2 = new SalmonCookiesShop ('Tokyo', 3, 24,1.2)
+let shop3 = new SalmonCookiesShop ('Dubai', 11, 38,3.7)
+let shop4 = new SalmonCookiesShop ('Paris', 20, 38,2.3)
+let shop5 = new SalmonCookiesShop ('Lima', 2, 16,4.6)
 
 SalmonCookiesShop.prototype.customersPerHour = function() {
       let min;
@@ -84,6 +83,34 @@ SalmonCookiesShop.prototype.render = function () {
         trEl.appendChild(thEl10);
         thEl10.textContent = 'Daily Total';
       }
+
+
+  let myform = document.getElementById('form');
+    myform.addEventListener('submit', addStore);
+    function addStore(event) {
+    
+        event.preventDefault();
+        let location = event.target.location.value;
+        let minHourlyCustomers = event.target.minHourlyCustomers.value;
+        let maxHourlyCustomers = event.target.maxHourlyCustomers.value;
+        let averageCookies = event.target.averageCookies.value;
+        let newStore = new SalmonCookiesShop (location, minHourlyCustomers, maxHourlyCustomers, averageCookies);
+        
+
+        let table = tableEl.rows.length-1;
+            tableEl.deleteRow(table);
+
+        newStore.customersPerHour();
+        newStore.cookiesPerHour();
+        newStore.render();
+
+        createTableFooter();
+
+        }
+
+
+
+
     createTableHeader();
      
     function createTableFooter(){
@@ -113,6 +140,10 @@ SalmonCookiesShop.prototype.render = function () {
         thEl70.textContent = newTotal;
     };
 
+ 
+    
+    
+
     
     shop1.customersPerHour();
     shop1.cookiesPerHour();
@@ -137,4 +168,3 @@ SalmonCookiesShop.prototype.render = function () {
 
 
   
-
