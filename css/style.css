@@ -94,7 +94,17 @@ body{
   
   table, th, td {
     margin-left: auto;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-right: auto;
     border: 1px solid black;
+  }
+
+  form {
+    width:auto;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    margin-top: 5%;
+
   }
